@@ -20,6 +20,7 @@ if response.status_code == 200:
 import sqlite3
 connection = sqlite3.connect("itstep_DB.sl3")
 cur = connection.cursor()
+cur.execute("CREATE TABLE first_table (Sites TEXT),(Amounts NUMBERS);")
 def abc(url):
     cur.execute("SELECT * FROM first_table WHERE Sites = ?", (url,))
     existing_site = cur.fetchone()

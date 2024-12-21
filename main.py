@@ -8,7 +8,4 @@ if response.status_code == 200:
  exchange_rate = float(item)
  a = int(input())
  b = a * exchange_rate
- print(b)
-
-
-
+ print(f"{b} ₸")
